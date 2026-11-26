@@ -54,3 +54,20 @@ def test_expected_kpis_file_is_current():
     k = kpis()
     assert f"| Net Sales (BDT) | {k['Net Sales (BDT)']:,} |" in text
     assert f"| Target Achievement % | {k['Target Achievement %']:,} |" in text
+
+
+def test_pbip_is_generated_and_complete():
+    import re
+    import subprocess
+    import sys
+
+    subprocess.run([sys.executable, str(ROOT / "scripts" / "build_pbip.py")], check=True, capture_output=True)
+    sm = ROOT / "powerbi" / "pbip" / "FMCG Sales.SemanticModel" / "definition"
+    tables = {p.stem for p in (sm / "tables").glob("*.tmdl")}
+    assert tables == {p.stem for p in D.glob("*.csv")}
+    dax_measures = re.findall(r"^([A-Z][^=\n/]*?) =", (ROOT / "powerbi" / "measures.dax").read_text(), re.M)
+    tmdl = (sm / "tables" / "fact_sales.tmdl").read_text()
+    assert tmdl.count("\tmeasure ") == len(dax_measures)
+    rels = (sm / "relationships.tmdl").read_text()
+    assert rels.count("relationship ") == 13 and rels.count("isActive: false") == 1
+    assert "dataCategory: Time" in (sm / "tables" / "dim_date.tmdl").read_text()

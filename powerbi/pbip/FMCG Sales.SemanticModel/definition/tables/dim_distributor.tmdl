@@ -1,0 +1,34 @@
+table dim_distributor
+	lineageTag: 8f4b5447-a148-5531-b979-69d5711dadbf
+
+	column distributor_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: a9c32e80-de9c-5ba6-88cf-fb06e93acd34
+		summarizeBy: none
+		sourceColumn: distributor_id
+
+	column distributor
+		dataType: string
+		lineageTag: 9a89fdeb-68ef-5c30-8b5d-04292ddd3587
+		summarizeBy: none
+		sourceColumn: distributor
+
+	column territory_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 5a40cd54-a1da-53fb-8e6b-0255e094c80e
+		summarizeBy: none
+		sourceColumn: territory_id
+
+	partition dim_distributor = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "dim_distributor.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"distributor_id", Int64.Type}, {"distributor", type text}, {"territory_id", Int64.Type}}, "en-US")
+				in
+				    Typed

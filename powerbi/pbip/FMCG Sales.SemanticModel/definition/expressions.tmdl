@@ -1,0 +1,2 @@
+expression DataFolder = "C:\fmcg-sales-powerbi\data\" meta [IsParameterQuery = true, Type = "Text", IsParameterQueryRequired = true]
+	lineageTag: 2044219f-fbb3-5a88-84d3-566ef5793f61

@@ -1,0 +1,52 @@
+relationship 992888fe-cade-5008-8a42-a42248697e56
+	fromColumn: fact_sales.date_key
+	toColumn: dim_date.date_key
+
+relationship 421bf4af-c9df-5e16-842e-2f0545e65632
+	fromColumn: fact_visits.date_key
+	toColumn: dim_date.date_key
+
+relationship 48ea2800-2853-5c5c-a758-cec379adbf9a
+	fromColumn: fact_targets.date_key
+	toColumn: dim_date.date_key
+
+relationship 34eb627f-ee12-5f55-872b-3b9bb70ffc95
+	fromColumn: fact_sales.sku
+	toColumn: dim_product.sku
+
+relationship 58ff884d-9880-5583-b81b-dcfb8762328e
+	fromColumn: fact_sales.outlet_id
+	toColumn: dim_outlet.outlet_id
+
+relationship 923699c5-6642-5cff-808c-7b7e49683f42
+	fromColumn: fact_visits.outlet_id
+	toColumn: dim_outlet.outlet_id
+
+relationship 3edf7b76-bb31-5978-a0c6-de4129617344
+	fromColumn: fact_sales.rep_id
+	toColumn: dim_sales_rep.rep_id
+
+relationship 35548af5-b151-5585-a7c2-5da1d7c36bf1
+	fromColumn: fact_visits.rep_id
+	toColumn: dim_sales_rep.rep_id
+
+relationship d382dc81-dcb8-58d2-82f6-ff3a4edb1087
+	fromColumn: fact_targets.rep_id
+	toColumn: dim_sales_rep.rep_id
+
+relationship 1c6a0c1e-6d4b-5062-8cfd-570749970c4e
+	fromColumn: fact_targets.territory_id
+	toColumn: dim_territory.territory_id
+
+relationship b7f698a6-0bf6-5051-b2e7-a1770fc1bd72
+	fromColumn: dim_outlet.territory_id
+	toColumn: dim_territory.territory_id
+
+relationship 3315d139-9e78-5c13-9e45-ebdcac39f8a7
+	fromColumn: dim_distributor.territory_id
+	toColumn: dim_territory.territory_id
+
+relationship 5857af79-196d-5bc7-a6ca-841634e686ba
+	isActive: false
+	fromColumn: dim_sales_rep.territory_id
+	toColumn: dim_territory.territory_id
