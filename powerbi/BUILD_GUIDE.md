@@ -14,7 +14,7 @@
 
 ## Manual path (about 1–2 hours)
 
-Follow these steps in **Power BI Desktop**, then save the file as `powerbi/fmcg_sales.pbix` and add screenshots to `docs/`.
+Follow these steps in **Power BI Desktop**, then save the file as `powerbi/fmcg_sales.pbix`.
 
 ## 1. Load the data (10 min)
 
@@ -48,11 +48,9 @@ Create an empty `_Measures` table and paste each measure from [measures.dax](mea
 
 Add a tooltip page with Net Sales, YoY and Achievement for the hovered territory, and bookmarks to switch between value (BDT) and volume (Units).
 
-## 6. Publish the portfolio piece (10 min)
+## 6. Save (2 min)
 
-1. Save as `powerbi/fmcg_sales.pbix` (or as a Power BI Project `.pbip` so the model is readable on GitHub).
-2. Screenshot each page to `docs/page-1-overview.png` and so on, and replace the placeholders in the README.
-3. Optional: **Publish to web** from Power BI Service and add the public link to the README.
+Save as `powerbi/fmcg_sales.pbix`, or as a Power BI Project (`.pbip`) so the model stays readable on GitHub.
 
 ## Talking points for interviews
 
