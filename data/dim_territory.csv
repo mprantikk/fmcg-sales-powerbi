@@ -1,0 +1,21 @@
+territory_id,territory,region,division,area_type
+1,Uttara,Dhaka North,Dhaka,Urban
+2,Mirpur,Dhaka North,Dhaka,Urban
+3,Gulshan,Dhaka North,Dhaka,Urban
+4,Dhanmondi,Dhaka South,Dhaka,Urban
+5,Motijheel,Dhaka South,Dhaka,Urban
+6,Jatrabari,Dhaka South,Dhaka,Urban
+7,Tongi,Gazipur,Dhaka,Urban
+8,Joydebpur,Gazipur,Dhaka,Urban
+9,Agrabad,Chattogram City,Chattogram,Urban
+10,Panchlaish,Chattogram City,Chattogram,Urban
+11,Cumilla Sadar,Cumilla,Chattogram,Urban
+12,Laksam,Cumilla,Chattogram,Urban
+13,Rajshahi Sadar,Rajshahi,Rajshahi,Semi-urban
+14,Bogura,Rajshahi,Rajshahi,Semi-urban
+15,Khulna Sadar,Khulna,Khulna,Semi-urban
+16,Jashore,Khulna,Khulna,Semi-urban
+17,Sylhet Sadar,Sylhet,Sylhet,Semi-urban
+18,Moulvibazar,Sylhet,Sylhet,Semi-urban
+19,Rangpur Sadar,Rangpur,Rangpur,Semi-urban
+20,Dinajpur,Rangpur,Rangpur,Semi-urban

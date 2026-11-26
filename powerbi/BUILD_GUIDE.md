@@ -1,0 +1,48 @@
+# Build guide (about 1–2 hours)
+
+Everything except the `.pbix` is in this repo. Follow these steps in **Power BI Desktop**, then save the file as `powerbi/fmcg_sales.pbix` and add screenshots to `docs/`.
+
+## 1. Load the data (10 min)
+
+1. **Get data → Text/CSV**, load all nine files from `data/`.
+2. In Power Query, check types: `date_key` = whole number, `date` = date, money columns = fixed decimal, flags (`visited`, `productive`, `gps_verified`, `is_weekend`) = whole number.
+3. **Close & Apply.**
+
+## 2. Model (15 min)
+
+Follow [MODEL.md](MODEL.md): create the relationships, mark `dim_date` as the date table, sort `month` by `month_no`, build the Division → Region → Territory hierarchy, and hide keys.
+
+## 3. Measures (15 min)
+
+Create an empty `_Measures` table and paste each measure from [measures.dax](measures.dax). Format: money measures as whole numbers with thousands separators, `%` measures as percentage with 1 decimal.
+
+**Check your work:** add a table visual filtered to 2025 with the headline measures. Every value must match [EXPECTED_KPIS.md](EXPECTED_KPIS.md). If one doesn't, fix it before building pages.
+
+## 4. Theme (2 min)
+
+**View → Themes → Browse for themes → `powerbi/theme.json`.**
+
+## 5. Pages (45–60 min)
+
+| Page | Visuals |
+|---|---|
+| **Executive overview** | Cards: Net Sales, YoY Arrow, Target Achievement %, Strike Rate %, Numeric Distribution %. Line: Net Sales vs Net Sales LY by month. Bar: Net Sales by Division with Target as a marker. Slicers: Year, Division, Category |
+| **Territory performance** | Matrix: Division → Region → Territory with Net Sales, Target, Achievement % (conditional colour by Achievement Status), YoY %, Territory Rank. Filled map or shape map by division |
+| **Field force** | Table by sales officer: Visits Completed, Visit Compliance %, Strike Rate %, Avg Drop Size, Lines per Call, Achievement %. Scatter: Strike Rate % vs Avg Drop Size (size = Net Sales) to spot coaching needs |
+| **Product & distribution** | Bar: SKU Share %. Matrix: SKU × month of Numeric Distribution %. Line: new-launch SKUs (SKU08, SKU09) ramp-up. Pareto: outlets by Net Sales with Outlet Cumulative Share % |
+| **Data quality** | Cards: GPS Verified %, Return Rate %. Table of the sales-app checks from `salesapp/` output (`reports/salesapp_quality.csv`) |
+
+Add a tooltip page with Net Sales, YoY and Achievement for the hovered territory, and bookmarks to switch between value (BDT) and volume (Units).
+
+## 6. Publish the portfolio piece (10 min)
+
+1. Save as `powerbi/fmcg_sales.pbix` (or as a Power BI Project `.pbip` so the model is readable on GitHub).
+2. Screenshot each page to `docs/page-1-overview.png` and so on, and replace the placeholders in the README.
+3. Optional: **Publish to web** from Power BI Service and add the public link to the README.
+
+## Talking points for interviews
+
+- Why three fact tables at different grains, and why targets are keyed to the first of the month
+- Why the territory → rep relationship is inactive (ambiguous filter paths)
+- How Net Sales handles returns, and why raw columns are hidden
+- How you reconciled every card against an independent pandas calculation

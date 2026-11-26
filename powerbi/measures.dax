@@ -1,0 +1,102 @@
+// =====================================================================
+// FMCG Sales & Distribution: DAX measures
+// Create a table called _Measures (Enter data > empty table) and add each
+// measure below to it. Display folders are shown in comments.
+// Every "Expected" value in EXPECTED_KPIS.md should match these measures
+// when the report is filtered to 2025.
+// =====================================================================
+
+// ---------- Sales  (folder: 1 Sales)
+Gross Sales = SUM ( fact_sales[gross_bdt] )
+
+Discounts = SUM ( fact_sales[discount_bdt] )
+
+Returns = SUM ( fact_sales[returned_bdt] )
+
+Net Sales =
+    SUM ( fact_sales[net_bdt] ) - [Returns]
+
+Net Sales LY =
+    CALCULATE ( [Net Sales], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+
+Net Sales YoY % =
+    DIVIDE ( [Net Sales] - [Net Sales LY], [Net Sales LY] )
+
+Net Sales MTD = TOTALMTD ( [Net Sales], dim_date[date] )
+
+Net Sales YTD = TOTALYTD ( [Net Sales], dim_date[date] )
+
+Net Sales YTD LY =
+    CALCULATE ( [Net Sales YTD], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+
+Return Rate % =
+    DIVIDE ( [Returns], SUM ( fact_sales[net_bdt] ) )
+
+Discount Rate % = DIVIDE ( [Discounts], [Gross Sales] )
+
+Units = SUM ( fact_sales[qty] )
+
+// ---------- Targets  (folder: 2 Targets)
+// fact_targets is monthly; it relates to dim_sales_rep and to a year_month key.
+Target =
+    SUM ( fact_targets[target_bdt] )
+
+Target Achievement % = DIVIDE ( [Net Sales], [Target] )
+
+Gap to Target = [Net Sales] - [Target]
+
+Achievement Status =
+    VAR a = [Target Achievement %]
+    RETURN SWITCH ( TRUE (), ISBLANK ( a ), BLANK (), a >= 1, "On target", a >= 0.9, "Close", "Behind" )
+
+// ---------- Field force  (folder: 3 Field force)
+Visits Planned = COUNTROWS ( fact_visits )
+
+Visits Completed = CALCULATE ( COUNTROWS ( fact_visits ), fact_visits[visited] = 1 )
+
+Productive Calls = CALCULATE ( COUNTROWS ( fact_visits ), fact_visits[productive] = 1 )
+
+Visit Compliance % = DIVIDE ( [Visits Completed], [Visits Planned] )
+
+// Share of completed visits that produced an order
+Strike Rate % = DIVIDE ( [Productive Calls], [Visits Completed] )
+
+Orders = DISTINCTCOUNT ( fact_sales[visit_id] )
+
+Avg Drop Size =
+    DIVIDE ( SUM ( fact_sales[net_bdt] ), [Orders] )
+
+Lines per Call = DIVIDE ( COUNTROWS ( fact_sales ), [Orders] )
+
+// ---------- Distribution  (folder: 4 Distribution)
+Active Outlets = DISTINCTCOUNT ( fact_sales[outlet_id] )
+
+Total Outlets = CALCULATE ( COUNTROWS ( dim_outlet ), REMOVEFILTERS ( fact_sales ) )
+
+// Share of the outlet universe (in the current territory/outlet filter) that bought in the period
+Numeric Distribution % = DIVIDE ( [Active Outlets], [Total Outlets] )
+
+// ---------- Mix & ranking  (folder: 5 Mix)
+SKU Share % =
+    DIVIDE ( [Net Sales], CALCULATE ( [Net Sales], REMOVEFILTERS ( dim_product ) ) )
+
+Territory Rank =
+    RANKX ( ALLSELECTED ( dim_territory[territory] ), [Net Sales], , DESC, DENSE )
+
+// Cumulative share of sales for a Pareto (80/20) chart of outlets
+Outlet Cumulative Share % =
+    VAR cur = [Net Sales]
+    VAR tbl = ADDCOLUMNS ( ALLSELECTED ( dim_outlet[outlet_id] ), "@s", [Net Sales] )
+    RETURN DIVIDE ( SUMX ( FILTER ( tbl, [@s] >= cur ), [@s] ), SUMX ( tbl, [@s] ) )
+
+// ---------- Data quality  (folder: 6 Data quality)
+GPS Verified % =
+    DIVIDE ( CALCULATE ( COUNTROWS ( fact_visits ), fact_visits[visited] = 1, fact_visits[gps_verified] = 1 ),
+             [Visits Completed] )
+
+// ---------- Formatting helpers  (folder: 9 Helpers)
+Net Sales (M BDT) = DIVIDE ( [Net Sales], 1e6 )
+
+YoY Arrow =
+    VAR y = [Net Sales YoY %]
+    RETURN IF ( ISBLANK ( y ), BLANK (), IF ( y >= 0, "▲ ", "▼ " ) & FORMAT ( ABS ( y ), "0.0%" ) )
