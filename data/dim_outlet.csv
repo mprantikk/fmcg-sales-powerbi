@@ -1,0 +1,1165 @@
+outlet_id,outlet_name,outlet_type,territory_id,grade
+1,Outlet 0001,Grocery,1,B
+2,Outlet 0002,Grocery,1,C
+3,Outlet 0003,Grocery,1,A
+4,Outlet 0004,Pharmacy,1,B
+5,Outlet 0005,Grocery,1,B
+6,Outlet 0006,Confectionery,1,B
+7,Outlet 0007,Grocery,1,C
+8,Outlet 0008,Tea stall,1,B
+9,Outlet 0009,Grocery,1,B
+10,Outlet 0010,Tea stall,1,B
+11,Outlet 0011,Grocery,1,C
+12,Outlet 0012,Pharmacy,1,C
+13,Outlet 0013,Tea stall,1,A
+14,Outlet 0014,Grocery,1,A
+15,Outlet 0015,Grocery,1,C
+16,Outlet 0016,Grocery,1,B
+17,Outlet 0017,Pharmacy,1,C
+18,Outlet 0018,Confectionery,1,C
+19,Outlet 0019,Grocery,1,B
+20,Outlet 0020,Grocery,1,C
+21,Outlet 0021,Grocery,1,C
+22,Outlet 0022,Tea stall,1,C
+23,Outlet 0023,Confectionery,1,A
+24,Outlet 0024,Grocery,1,C
+25,Outlet 0025,Confectionery,1,B
+26,Outlet 0026,Grocery,1,A
+27,Outlet 0027,Grocery,1,A
+28,Outlet 0028,Grocery,1,C
+29,Outlet 0029,Grocery,1,A
+30,Outlet 0030,Grocery,1,B
+31,Outlet 0031,Tea stall,1,B
+32,Outlet 0032,Grocery,1,A
+33,Outlet 0033,Grocery,1,C
+34,Outlet 0034,Grocery,1,A
+35,Outlet 0035,Pharmacy,1,B
+36,Outlet 0036,Confectionery,1,A
+37,Outlet 0037,Grocery,1,C
+38,Outlet 0038,Supermarket,1,B
+39,Outlet 0039,Supermarket,1,A
+40,Outlet 0040,Grocery,1,C
+41,Outlet 0041,Grocery,1,C
+42,Outlet 0042,Grocery,1,C
+43,Outlet 0043,Grocery,1,B
+44,Outlet 0044,Grocery,1,C
+45,Outlet 0045,Grocery,1,B
+46,Outlet 0046,Tea stall,1,C
+47,Outlet 0047,Grocery,1,C
+48,Outlet 0048,Grocery,1,B
+49,Outlet 0049,Grocery,1,B
+50,Outlet 0050,Grocery,1,C
+51,Outlet 0051,Grocery,1,C
+52,Outlet 0052,Grocery,1,B
+53,Outlet 0053,Grocery,1,C
+54,Outlet 0054,Confectionery,1,B
+55,Outlet 0055,Grocery,1,C
+56,Outlet 0056,Grocery,1,B
+57,Outlet 0057,Grocery,1,B
+58,Outlet 0058,Grocery,1,A
+59,Outlet 0059,Grocery,1,A
+60,Outlet 0060,Grocery,1,C
+61,Outlet 0061,Grocery,1,B
+62,Outlet 0062,Grocery,1,C
+63,Outlet 0063,Grocery,1,C
+64,Outlet 0064,Tea stall,1,C
+65,Outlet 0065,Supermarket,1,A
+66,Outlet 0066,Grocery,1,C
+67,Outlet 0067,Grocery,1,B
+68,Outlet 0068,Confectionery,1,C
+69,Outlet 0069,Tea stall,1,C
+70,Outlet 0070,Tea stall,1,B
+71,Outlet 0071,Supermarket,1,C
+72,Outlet 0072,Pharmacy,1,A
+73,Outlet 0073,Pharmacy,1,C
+74,Outlet 0074,Tea stall,1,C
+75,Outlet 0075,Grocery,1,C
+76,Outlet 0076,Grocery,1,B
+77,Outlet 0077,Grocery,1,C
+78,Outlet 0078,Confectionery,2,C
+79,Outlet 0079,Grocery,2,A
+80,Outlet 0080,Grocery,2,C
+81,Outlet 0081,Grocery,2,B
+82,Outlet 0082,Confectionery,2,B
+83,Outlet 0083,Grocery,2,C
+84,Outlet 0084,Grocery,2,B
+85,Outlet 0085,Supermarket,2,C
+86,Outlet 0086,Grocery,2,A
+87,Outlet 0087,Tea stall,2,C
+88,Outlet 0088,Grocery,2,C
+89,Outlet 0089,Grocery,2,C
+90,Outlet 0090,Grocery,2,C
+91,Outlet 0091,Confectionery,2,C
+92,Outlet 0092,Pharmacy,2,C
+93,Outlet 0093,Tea stall,2,A
+94,Outlet 0094,Pharmacy,2,B
+95,Outlet 0095,Tea stall,2,B
+96,Outlet 0096,Grocery,2,C
+97,Outlet 0097,Confectionery,2,B
+98,Outlet 0098,Tea stall,2,C
+99,Outlet 0099,Confectionery,2,C
+100,Outlet 0100,Tea stall,2,C
+101,Outlet 0101,Grocery,2,C
+102,Outlet 0102,Tea stall,2,B
+103,Outlet 0103,Confectionery,2,B
+104,Outlet 0104,Grocery,2,B
+105,Outlet 0105,Tea stall,2,B
+106,Outlet 0106,Grocery,2,C
+107,Outlet 0107,Grocery,2,B
+108,Outlet 0108,Grocery,2,A
+109,Outlet 0109,Grocery,2,C
+110,Outlet 0110,Grocery,2,B
+111,Outlet 0111,Supermarket,2,B
+112,Outlet 0112,Grocery,2,C
+113,Outlet 0113,Grocery,2,B
+114,Outlet 0114,Tea stall,2,B
+115,Outlet 0115,Grocery,2,C
+116,Outlet 0116,Grocery,2,A
+117,Outlet 0117,Grocery,2,C
+118,Outlet 0118,Confectionery,2,B
+119,Outlet 0119,Grocery,2,C
+120,Outlet 0120,Grocery,2,C
+121,Outlet 0121,Pharmacy,2,C
+122,Outlet 0122,Grocery,2,A
+123,Outlet 0123,Supermarket,2,B
+124,Outlet 0124,Grocery,2,B
+125,Outlet 0125,Tea stall,2,A
+126,Outlet 0126,Grocery,2,C
+127,Outlet 0127,Grocery,2,B
+128,Outlet 0128,Grocery,2,C
+129,Outlet 0129,Grocery,2,C
+130,Outlet 0130,Grocery,2,C
+131,Outlet 0131,Grocery,2,C
+132,Outlet 0132,Tea stall,2,C
+133,Outlet 0133,Confectionery,2,A
+134,Outlet 0134,Grocery,2,A
+135,Outlet 0135,Grocery,2,B
+136,Outlet 0136,Tea stall,2,C
+137,Outlet 0137,Grocery,2,C
+138,Outlet 0138,Grocery,2,B
+139,Outlet 0139,Grocery,2,C
+140,Outlet 0140,Tea stall,2,A
+141,Outlet 0141,Tea stall,2,A
+142,Outlet 0142,Grocery,2,B
+143,Outlet 0143,Tea stall,2,A
+144,Outlet 0144,Pharmacy,2,B
+145,Outlet 0145,Confectionery,2,B
+146,Outlet 0146,Pharmacy,2,C
+147,Outlet 0147,Grocery,2,C
+148,Outlet 0148,Supermarket,2,B
+149,Outlet 0149,Grocery,3,C
+150,Outlet 0150,Tea stall,3,C
+151,Outlet 0151,Grocery,3,B
+152,Outlet 0152,Tea stall,3,C
+153,Outlet 0153,Tea stall,3,B
+154,Outlet 0154,Tea stall,3,C
+155,Outlet 0155,Tea stall,3,C
+156,Outlet 0156,Grocery,3,A
+157,Outlet 0157,Confectionery,3,C
+158,Outlet 0158,Supermarket,3,A
+159,Outlet 0159,Grocery,3,B
+160,Outlet 0160,Grocery,3,C
+161,Outlet 0161,Pharmacy,3,A
+162,Outlet 0162,Pharmacy,3,C
+163,Outlet 0163,Grocery,3,C
+164,Outlet 0164,Grocery,3,C
+165,Outlet 0165,Tea stall,3,B
+166,Outlet 0166,Grocery,3,C
+167,Outlet 0167,Confectionery,3,A
+168,Outlet 0168,Tea stall,3,B
+169,Outlet 0169,Grocery,3,C
+170,Outlet 0170,Tea stall,3,B
+171,Outlet 0171,Confectionery,3,C
+172,Outlet 0172,Confectionery,3,C
+173,Outlet 0173,Grocery,3,C
+174,Outlet 0174,Tea stall,3,B
+175,Outlet 0175,Grocery,3,C
+176,Outlet 0176,Grocery,3,B
+177,Outlet 0177,Grocery,3,B
+178,Outlet 0178,Grocery,3,C
+179,Outlet 0179,Tea stall,3,B
+180,Outlet 0180,Grocery,3,C
+181,Outlet 0181,Grocery,3,B
+182,Outlet 0182,Tea stall,3,B
+183,Outlet 0183,Tea stall,3,C
+184,Outlet 0184,Grocery,3,A
+185,Outlet 0185,Grocery,3,C
+186,Outlet 0186,Tea stall,3,C
+187,Outlet 0187,Grocery,3,C
+188,Outlet 0188,Tea stall,3,B
+189,Outlet 0189,Grocery,3,C
+190,Outlet 0190,Tea stall,3,C
+191,Outlet 0191,Confectionery,3,C
+192,Outlet 0192,Grocery,3,C
+193,Outlet 0193,Grocery,3,B
+194,Outlet 0194,Grocery,3,B
+195,Outlet 0195,Supermarket,3,B
+196,Outlet 0196,Grocery,3,C
+197,Outlet 0197,Grocery,3,C
+198,Outlet 0198,Grocery,3,C
+199,Outlet 0199,Pharmacy,3,B
+200,Outlet 0200,Grocery,3,C
+201,Outlet 0201,Grocery,3,C
+202,Outlet 0202,Grocery,3,C
+203,Outlet 0203,Confectionery,3,C
+204,Outlet 0204,Grocery,3,B
+205,Outlet 0205,Grocery,3,A
+206,Outlet 0206,Confectionery,3,C
+207,Outlet 0207,Grocery,3,C
+208,Outlet 0208,Tea stall,3,C
+209,Outlet 0209,Grocery,3,C
+210,Outlet 0210,Grocery,3,C
+211,Outlet 0211,Supermarket,3,C
+212,Outlet 0212,Grocery,3,C
+213,Outlet 0213,Tea stall,3,B
+214,Outlet 0214,Grocery,3,C
+215,Outlet 0215,Confectionery,3,C
+216,Outlet 0216,Grocery,3,A
+217,Outlet 0217,Grocery,4,C
+218,Outlet 0218,Grocery,4,C
+219,Outlet 0219,Confectionery,4,C
+220,Outlet 0220,Grocery,4,C
+221,Outlet 0221,Grocery,4,A
+222,Outlet 0222,Tea stall,4,C
+223,Outlet 0223,Confectionery,4,B
+224,Outlet 0224,Grocery,4,C
+225,Outlet 0225,Tea stall,4,C
+226,Outlet 0226,Grocery,4,C
+227,Outlet 0227,Grocery,4,A
+228,Outlet 0228,Tea stall,4,C
+229,Outlet 0229,Grocery,4,C
+230,Outlet 0230,Grocery,4,A
+231,Outlet 0231,Grocery,4,A
+232,Outlet 0232,Confectionery,4,A
+233,Outlet 0233,Grocery,4,B
+234,Outlet 0234,Grocery,4,B
+235,Outlet 0235,Grocery,4,B
+236,Outlet 0236,Grocery,4,A
+237,Outlet 0237,Grocery,4,C
+238,Outlet 0238,Confectionery,4,B
+239,Outlet 0239,Tea stall,4,C
+240,Outlet 0240,Grocery,4,B
+241,Outlet 0241,Pharmacy,4,C
+242,Outlet 0242,Grocery,4,C
+243,Outlet 0243,Grocery,4,B
+244,Outlet 0244,Pharmacy,4,B
+245,Outlet 0245,Grocery,4,B
+246,Outlet 0246,Grocery,4,C
+247,Outlet 0247,Confectionery,4,A
+248,Outlet 0248,Grocery,4,B
+249,Outlet 0249,Grocery,4,B
+250,Outlet 0250,Grocery,4,C
+251,Outlet 0251,Grocery,4,A
+252,Outlet 0252,Confectionery,4,A
+253,Outlet 0253,Grocery,4,C
+254,Outlet 0254,Tea stall,4,B
+255,Outlet 0255,Grocery,4,A
+256,Outlet 0256,Confectionery,4,B
+257,Outlet 0257,Tea stall,4,C
+258,Outlet 0258,Grocery,4,A
+259,Outlet 0259,Grocery,4,C
+260,Outlet 0260,Tea stall,4,B
+261,Outlet 0261,Grocery,4,C
+262,Outlet 0262,Confectionery,4,B
+263,Outlet 0263,Grocery,4,C
+264,Outlet 0264,Grocery,4,B
+265,Outlet 0265,Grocery,4,B
+266,Outlet 0266,Grocery,4,B
+267,Outlet 0267,Supermarket,4,A
+268,Outlet 0268,Grocery,4,B
+269,Outlet 0269,Grocery,4,A
+270,Outlet 0270,Grocery,4,C
+271,Outlet 0271,Grocery,4,B
+272,Outlet 0272,Pharmacy,4,C
+273,Outlet 0273,Grocery,4,C
+274,Outlet 0274,Grocery,4,A
+275,Outlet 0275,Tea stall,4,B
+276,Outlet 0276,Grocery,4,C
+277,Outlet 0277,Grocery,4,B
+278,Outlet 0278,Confectionery,4,A
+279,Outlet 0279,Confectionery,4,B
+280,Outlet 0280,Confectionery,4,C
+281,Outlet 0281,Grocery,4,C
+282,Outlet 0282,Grocery,4,A
+283,Outlet 0283,Tea stall,4,C
+284,Outlet 0284,Supermarket,4,C
+285,Outlet 0285,Confectionery,4,C
+286,Outlet 0286,Tea stall,4,C
+287,Outlet 0287,Pharmacy,4,B
+288,Outlet 0288,Supermarket,4,B
+289,Outlet 0289,Grocery,4,C
+290,Outlet 0290,Grocery,4,B
+291,Outlet 0291,Grocery,4,C
+292,Outlet 0292,Pharmacy,5,B
+293,Outlet 0293,Pharmacy,5,C
+294,Outlet 0294,Pharmacy,5,B
+295,Outlet 0295,Tea stall,5,B
+296,Outlet 0296,Grocery,5,A
+297,Outlet 0297,Grocery,5,C
+298,Outlet 0298,Tea stall,5,B
+299,Outlet 0299,Grocery,5,C
+300,Outlet 0300,Pharmacy,5,C
+301,Outlet 0301,Grocery,5,B
+302,Outlet 0302,Grocery,5,C
+303,Outlet 0303,Tea stall,5,A
+304,Outlet 0304,Grocery,5,B
+305,Outlet 0305,Pharmacy,5,A
+306,Outlet 0306,Grocery,5,C
+307,Outlet 0307,Grocery,5,C
+308,Outlet 0308,Grocery,5,C
+309,Outlet 0309,Tea stall,5,B
+310,Outlet 0310,Supermarket,5,B
+311,Outlet 0311,Supermarket,5,C
+312,Outlet 0312,Pharmacy,5,C
+313,Outlet 0313,Supermarket,5,C
+314,Outlet 0314,Tea stall,5,C
+315,Outlet 0315,Grocery,5,C
+316,Outlet 0316,Tea stall,5,B
+317,Outlet 0317,Grocery,5,B
+318,Outlet 0318,Pharmacy,5,A
+319,Outlet 0319,Tea stall,5,B
+320,Outlet 0320,Confectionery,5,B
+321,Outlet 0321,Supermarket,5,C
+322,Outlet 0322,Grocery,5,C
+323,Outlet 0323,Grocery,5,C
+324,Outlet 0324,Grocery,5,C
+325,Outlet 0325,Confectionery,5,A
+326,Outlet 0326,Grocery,5,B
+327,Outlet 0327,Grocery,5,C
+328,Outlet 0328,Tea stall,5,B
+329,Outlet 0329,Grocery,5,A
+330,Outlet 0330,Confectionery,5,C
+331,Outlet 0331,Grocery,5,C
+332,Outlet 0332,Grocery,5,C
+333,Outlet 0333,Tea stall,5,C
+334,Outlet 0334,Grocery,5,B
+335,Outlet 0335,Supermarket,5,A
+336,Outlet 0336,Grocery,5,A
+337,Outlet 0337,Grocery,5,C
+338,Outlet 0338,Grocery,5,A
+339,Outlet 0339,Grocery,5,A
+340,Outlet 0340,Grocery,5,C
+341,Outlet 0341,Grocery,5,B
+342,Outlet 0342,Confectionery,5,B
+343,Outlet 0343,Pharmacy,5,C
+344,Outlet 0344,Grocery,5,C
+345,Outlet 0345,Grocery,5,B
+346,Outlet 0346,Confectionery,5,C
+347,Outlet 0347,Grocery,5,B
+348,Outlet 0348,Grocery,5,C
+349,Outlet 0349,Grocery,5,C
+350,Outlet 0350,Grocery,5,B
+351,Outlet 0351,Grocery,5,A
+352,Outlet 0352,Tea stall,5,C
+353,Outlet 0353,Grocery,5,C
+354,Outlet 0354,Tea stall,5,C
+355,Outlet 0355,Grocery,5,A
+356,Outlet 0356,Grocery,5,A
+357,Outlet 0357,Pharmacy,5,C
+358,Outlet 0358,Grocery,5,B
+359,Outlet 0359,Confectionery,5,C
+360,Outlet 0360,Pharmacy,6,A
+361,Outlet 0361,Tea stall,6,A
+362,Outlet 0362,Tea stall,6,C
+363,Outlet 0363,Grocery,6,B
+364,Outlet 0364,Grocery,6,C
+365,Outlet 0365,Grocery,6,C
+366,Outlet 0366,Tea stall,6,B
+367,Outlet 0367,Grocery,6,C
+368,Outlet 0368,Supermarket,6,A
+369,Outlet 0369,Pharmacy,6,B
+370,Outlet 0370,Grocery,6,C
+371,Outlet 0371,Grocery,6,B
+372,Outlet 0372,Confectionery,6,B
+373,Outlet 0373,Supermarket,6,C
+374,Outlet 0374,Grocery,6,A
+375,Outlet 0375,Grocery,6,C
+376,Outlet 0376,Grocery,6,B
+377,Outlet 0377,Grocery,6,C
+378,Outlet 0378,Confectionery,6,A
+379,Outlet 0379,Pharmacy,6,C
+380,Outlet 0380,Grocery,6,A
+381,Outlet 0381,Pharmacy,6,C
+382,Outlet 0382,Grocery,6,C
+383,Outlet 0383,Grocery,6,C
+384,Outlet 0384,Pharmacy,6,C
+385,Outlet 0385,Tea stall,6,C
+386,Outlet 0386,Tea stall,6,A
+387,Outlet 0387,Grocery,6,B
+388,Outlet 0388,Grocery,6,C
+389,Outlet 0389,Pharmacy,6,A
+390,Outlet 0390,Tea stall,6,B
+391,Outlet 0391,Supermarket,6,C
+392,Outlet 0392,Grocery,6,C
+393,Outlet 0393,Grocery,6,C
+394,Outlet 0394,Pharmacy,6,C
+395,Outlet 0395,Pharmacy,6,C
+396,Outlet 0396,Pharmacy,6,B
+397,Outlet 0397,Tea stall,6,B
+398,Outlet 0398,Tea stall,6,B
+399,Outlet 0399,Confectionery,6,C
+400,Outlet 0400,Grocery,6,C
+401,Outlet 0401,Grocery,6,B
+402,Outlet 0402,Pharmacy,6,B
+403,Outlet 0403,Grocery,6,A
+404,Outlet 0404,Confectionery,6,C
+405,Outlet 0405,Tea stall,6,C
+406,Outlet 0406,Grocery,6,C
+407,Outlet 0407,Tea stall,6,C
+408,Outlet 0408,Grocery,6,C
+409,Outlet 0409,Grocery,6,B
+410,Outlet 0410,Grocery,6,B
+411,Outlet 0411,Supermarket,6,C
+412,Outlet 0412,Grocery,6,C
+413,Outlet 0413,Grocery,6,A
+414,Outlet 0414,Grocery,6,A
+415,Outlet 0415,Grocery,6,C
+416,Outlet 0416,Pharmacy,6,C
+417,Outlet 0417,Grocery,6,A
+418,Outlet 0418,Grocery,6,B
+419,Outlet 0419,Grocery,6,B
+420,Outlet 0420,Grocery,6,B
+421,Outlet 0421,Tea stall,6,C
+422,Outlet 0422,Pharmacy,7,A
+423,Outlet 0423,Grocery,7,B
+424,Outlet 0424,Tea stall,7,B
+425,Outlet 0425,Grocery,7,C
+426,Outlet 0426,Grocery,7,B
+427,Outlet 0427,Grocery,7,C
+428,Outlet 0428,Grocery,7,C
+429,Outlet 0429,Pharmacy,7,B
+430,Outlet 0430,Confectionery,7,B
+431,Outlet 0431,Pharmacy,7,A
+432,Outlet 0432,Grocery,7,A
+433,Outlet 0433,Grocery,7,B
+434,Outlet 0434,Grocery,7,A
+435,Outlet 0435,Confectionery,7,C
+436,Outlet 0436,Tea stall,7,B
+437,Outlet 0437,Grocery,7,B
+438,Outlet 0438,Grocery,7,B
+439,Outlet 0439,Grocery,7,A
+440,Outlet 0440,Grocery,7,B
+441,Outlet 0441,Grocery,7,C
+442,Outlet 0442,Pharmacy,7,B
+443,Outlet 0443,Grocery,7,B
+444,Outlet 0444,Grocery,7,A
+445,Outlet 0445,Grocery,7,A
+446,Outlet 0446,Pharmacy,7,B
+447,Outlet 0447,Tea stall,7,B
+448,Outlet 0448,Tea stall,7,C
+449,Outlet 0449,Grocery,7,B
+450,Outlet 0450,Grocery,7,C
+451,Outlet 0451,Grocery,7,B
+452,Outlet 0452,Tea stall,7,C
+453,Outlet 0453,Supermarket,7,B
+454,Outlet 0454,Grocery,7,B
+455,Outlet 0455,Grocery,7,C
+456,Outlet 0456,Tea stall,7,C
+457,Outlet 0457,Supermarket,7,B
+458,Outlet 0458,Grocery,7,A
+459,Outlet 0459,Pharmacy,7,C
+460,Outlet 0460,Grocery,7,B
+461,Outlet 0461,Grocery,7,C
+462,Outlet 0462,Tea stall,7,B
+463,Outlet 0463,Grocery,7,B
+464,Outlet 0464,Confectionery,7,A
+465,Outlet 0465,Grocery,7,C
+466,Outlet 0466,Tea stall,7,C
+467,Outlet 0467,Grocery,7,C
+468,Outlet 0468,Grocery,7,B
+469,Outlet 0469,Pharmacy,7,A
+470,Outlet 0470,Pharmacy,7,C
+471,Outlet 0471,Grocery,7,C
+472,Outlet 0472,Tea stall,7,B
+473,Outlet 0473,Grocery,7,C
+474,Outlet 0474,Grocery,7,A
+475,Outlet 0475,Grocery,7,A
+476,Outlet 0476,Supermarket,7,A
+477,Outlet 0477,Grocery,7,B
+478,Outlet 0478,Supermarket,7,C
+479,Outlet 0479,Grocery,7,B
+480,Outlet 0480,Grocery,7,C
+481,Outlet 0481,Grocery,7,B
+482,Outlet 0482,Grocery,7,C
+483,Outlet 0483,Grocery,7,B
+484,Outlet 0484,Grocery,7,C
+485,Outlet 0485,Confectionery,7,C
+486,Outlet 0486,Pharmacy,7,C
+487,Outlet 0487,Grocery,7,A
+488,Outlet 0488,Grocery,7,B
+489,Outlet 0489,Grocery,7,A
+490,Outlet 0490,Grocery,7,C
+491,Outlet 0491,Grocery,7,B
+492,Outlet 0492,Grocery,7,C
+493,Outlet 0493,Grocery,7,C
+494,Outlet 0494,Confectionery,7,B
+495,Outlet 0495,Supermarket,7,C
+496,Outlet 0496,Tea stall,7,A
+497,Outlet 0497,Grocery,7,C
+498,Outlet 0498,Pharmacy,7,B
+499,Outlet 0499,Grocery,8,B
+500,Outlet 0500,Tea stall,8,A
+501,Outlet 0501,Grocery,8,A
+502,Outlet 0502,Supermarket,8,C
+503,Outlet 0503,Grocery,8,C
+504,Outlet 0504,Grocery,8,B
+505,Outlet 0505,Grocery,8,B
+506,Outlet 0506,Tea stall,8,B
+507,Outlet 0507,Grocery,8,C
+508,Outlet 0508,Grocery,8,A
+509,Outlet 0509,Confectionery,8,C
+510,Outlet 0510,Grocery,8,B
+511,Outlet 0511,Supermarket,8,B
+512,Outlet 0512,Grocery,8,B
+513,Outlet 0513,Grocery,8,C
+514,Outlet 0514,Grocery,8,C
+515,Outlet 0515,Confectionery,8,A
+516,Outlet 0516,Grocery,8,B
+517,Outlet 0517,Grocery,8,B
+518,Outlet 0518,Grocery,8,C
+519,Outlet 0519,Grocery,8,C
+520,Outlet 0520,Tea stall,8,C
+521,Outlet 0521,Pharmacy,8,B
+522,Outlet 0522,Confectionery,8,B
+523,Outlet 0523,Grocery,8,B
+524,Outlet 0524,Grocery,8,A
+525,Outlet 0525,Grocery,8,B
+526,Outlet 0526,Confectionery,8,B
+527,Outlet 0527,Pharmacy,8,C
+528,Outlet 0528,Grocery,8,B
+529,Outlet 0529,Grocery,8,B
+530,Outlet 0530,Grocery,8,C
+531,Outlet 0531,Pharmacy,8,C
+532,Outlet 0532,Confectionery,8,B
+533,Outlet 0533,Confectionery,8,B
+534,Outlet 0534,Grocery,8,C
+535,Outlet 0535,Tea stall,8,C
+536,Outlet 0536,Grocery,8,A
+537,Outlet 0537,Grocery,8,B
+538,Outlet 0538,Supermarket,8,B
+539,Outlet 0539,Confectionery,8,C
+540,Outlet 0540,Pharmacy,8,B
+541,Outlet 0541,Grocery,8,C
+542,Outlet 0542,Grocery,8,A
+543,Outlet 0543,Grocery,8,C
+544,Outlet 0544,Grocery,8,C
+545,Outlet 0545,Grocery,8,C
+546,Outlet 0546,Pharmacy,8,A
+547,Outlet 0547,Confectionery,8,B
+548,Outlet 0548,Grocery,8,C
+549,Outlet 0549,Pharmacy,8,A
+550,Outlet 0550,Grocery,8,C
+551,Outlet 0551,Grocery,8,B
+552,Outlet 0552,Tea stall,8,B
+553,Outlet 0553,Pharmacy,8,C
+554,Outlet 0554,Grocery,8,A
+555,Outlet 0555,Grocery,8,A
+556,Outlet 0556,Confectionery,8,A
+557,Outlet 0557,Tea stall,8,B
+558,Outlet 0558,Tea stall,8,C
+559,Outlet 0559,Grocery,8,A
+560,Outlet 0560,Tea stall,8,C
+561,Outlet 0561,Grocery,8,B
+562,Outlet 0562,Grocery,8,C
+563,Outlet 0563,Grocery,8,C
+564,Outlet 0564,Grocery,9,B
+565,Outlet 0565,Tea stall,9,C
+566,Outlet 0566,Grocery,9,C
+567,Outlet 0567,Grocery,9,C
+568,Outlet 0568,Grocery,9,B
+569,Outlet 0569,Grocery,9,A
+570,Outlet 0570,Grocery,9,C
+571,Outlet 0571,Grocery,9,C
+572,Outlet 0572,Grocery,9,C
+573,Outlet 0573,Grocery,9,A
+574,Outlet 0574,Confectionery,9,B
+575,Outlet 0575,Grocery,9,B
+576,Outlet 0576,Grocery,9,A
+577,Outlet 0577,Grocery,9,C
+578,Outlet 0578,Tea stall,9,C
+579,Outlet 0579,Tea stall,9,C
+580,Outlet 0580,Supermarket,9,C
+581,Outlet 0581,Pharmacy,9,B
+582,Outlet 0582,Confectionery,9,B
+583,Outlet 0583,Grocery,9,C
+584,Outlet 0584,Confectionery,9,C
+585,Outlet 0585,Tea stall,9,C
+586,Outlet 0586,Grocery,9,B
+587,Outlet 0587,Pharmacy,9,B
+588,Outlet 0588,Grocery,9,B
+589,Outlet 0589,Tea stall,9,C
+590,Outlet 0590,Tea stall,9,C
+591,Outlet 0591,Confectionery,9,B
+592,Outlet 0592,Confectionery,9,C
+593,Outlet 0593,Grocery,9,B
+594,Outlet 0594,Grocery,9,C
+595,Outlet 0595,Grocery,9,B
+596,Outlet 0596,Grocery,9,B
+597,Outlet 0597,Grocery,9,B
+598,Outlet 0598,Tea stall,9,B
+599,Outlet 0599,Tea stall,9,A
+600,Outlet 0600,Grocery,9,A
+601,Outlet 0601,Confectionery,9,C
+602,Outlet 0602,Supermarket,9,C
+603,Outlet 0603,Grocery,9,A
+604,Outlet 0604,Pharmacy,9,C
+605,Outlet 0605,Grocery,9,A
+606,Outlet 0606,Pharmacy,9,B
+607,Outlet 0607,Tea stall,9,A
+608,Outlet 0608,Grocery,9,B
+609,Outlet 0609,Tea stall,9,B
+610,Outlet 0610,Grocery,9,C
+611,Outlet 0611,Grocery,9,C
+612,Outlet 0612,Grocery,9,C
+613,Outlet 0613,Grocery,9,B
+614,Outlet 0614,Grocery,9,C
+615,Outlet 0615,Grocery,9,B
+616,Outlet 0616,Grocery,9,A
+617,Outlet 0617,Grocery,9,A
+618,Outlet 0618,Grocery,9,C
+619,Outlet 0619,Grocery,9,B
+620,Outlet 0620,Grocery,10,B
+621,Outlet 0621,Grocery,10,C
+622,Outlet 0622,Grocery,10,A
+623,Outlet 0623,Grocery,10,B
+624,Outlet 0624,Tea stall,10,B
+625,Outlet 0625,Grocery,10,C
+626,Outlet 0626,Grocery,10,C
+627,Outlet 0627,Grocery,10,B
+628,Outlet 0628,Grocery,10,B
+629,Outlet 0629,Grocery,10,B
+630,Outlet 0630,Confectionery,10,A
+631,Outlet 0631,Grocery,10,B
+632,Outlet 0632,Tea stall,10,B
+633,Outlet 0633,Confectionery,10,B
+634,Outlet 0634,Grocery,10,B
+635,Outlet 0635,Confectionery,10,C
+636,Outlet 0636,Grocery,10,C
+637,Outlet 0637,Grocery,10,C
+638,Outlet 0638,Grocery,10,C
+639,Outlet 0639,Tea stall,10,B
+640,Outlet 0640,Grocery,10,A
+641,Outlet 0641,Confectionery,10,B
+642,Outlet 0642,Grocery,10,C
+643,Outlet 0643,Confectionery,10,B
+644,Outlet 0644,Grocery,10,B
+645,Outlet 0645,Tea stall,10,C
+646,Outlet 0646,Tea stall,10,B
+647,Outlet 0647,Tea stall,10,A
+648,Outlet 0648,Grocery,10,C
+649,Outlet 0649,Tea stall,10,A
+650,Outlet 0650,Grocery,10,A
+651,Outlet 0651,Grocery,10,C
+652,Outlet 0652,Grocery,10,C
+653,Outlet 0653,Grocery,10,C
+654,Outlet 0654,Pharmacy,10,B
+655,Outlet 0655,Grocery,10,C
+656,Outlet 0656,Grocery,10,C
+657,Outlet 0657,Confectionery,10,C
+658,Outlet 0658,Grocery,10,B
+659,Outlet 0659,Grocery,10,C
+660,Outlet 0660,Pharmacy,10,C
+661,Outlet 0661,Tea stall,10,A
+662,Outlet 0662,Grocery,10,C
+663,Outlet 0663,Pharmacy,10,B
+664,Outlet 0664,Grocery,10,C
+665,Outlet 0665,Grocery,10,C
+666,Outlet 0666,Pharmacy,10,C
+667,Outlet 0667,Pharmacy,10,C
+668,Outlet 0668,Tea stall,10,C
+669,Outlet 0669,Grocery,10,B
+670,Outlet 0670,Tea stall,10,C
+671,Outlet 0671,Supermarket,10,A
+672,Outlet 0672,Grocery,10,A
+673,Outlet 0673,Confectionery,10,B
+674,Outlet 0674,Grocery,10,B
+675,Outlet 0675,Supermarket,10,A
+676,Outlet 0676,Grocery,11,A
+677,Outlet 0677,Grocery,11,C
+678,Outlet 0678,Grocery,11,A
+679,Outlet 0679,Supermarket,11,C
+680,Outlet 0680,Tea stall,11,C
+681,Outlet 0681,Confectionery,11,C
+682,Outlet 0682,Grocery,11,C
+683,Outlet 0683,Pharmacy,11,A
+684,Outlet 0684,Grocery,11,C
+685,Outlet 0685,Grocery,11,B
+686,Outlet 0686,Grocery,11,C
+687,Outlet 0687,Grocery,11,C
+688,Outlet 0688,Confectionery,11,C
+689,Outlet 0689,Supermarket,11,A
+690,Outlet 0690,Supermarket,11,B
+691,Outlet 0691,Pharmacy,11,C
+692,Outlet 0692,Grocery,11,A
+693,Outlet 0693,Grocery,11,C
+694,Outlet 0694,Grocery,11,A
+695,Outlet 0695,Grocery,11,C
+696,Outlet 0696,Grocery,11,C
+697,Outlet 0697,Grocery,11,B
+698,Outlet 0698,Grocery,11,A
+699,Outlet 0699,Supermarket,11,A
+700,Outlet 0700,Confectionery,11,A
+701,Outlet 0701,Tea stall,11,B
+702,Outlet 0702,Pharmacy,11,A
+703,Outlet 0703,Pharmacy,11,B
+704,Outlet 0704,Grocery,11,C
+705,Outlet 0705,Grocery,11,C
+706,Outlet 0706,Confectionery,11,C
+707,Outlet 0707,Pharmacy,11,C
+708,Outlet 0708,Supermarket,11,B
+709,Outlet 0709,Supermarket,11,C
+710,Outlet 0710,Grocery,11,A
+711,Outlet 0711,Confectionery,11,B
+712,Outlet 0712,Tea stall,11,B
+713,Outlet 0713,Grocery,11,B
+714,Outlet 0714,Confectionery,11,C
+715,Outlet 0715,Pharmacy,11,C
+716,Outlet 0716,Grocery,11,C
+717,Outlet 0717,Grocery,11,B
+718,Outlet 0718,Grocery,11,A
+719,Outlet 0719,Pharmacy,11,C
+720,Outlet 0720,Grocery,11,A
+721,Outlet 0721,Tea stall,11,C
+722,Outlet 0722,Confectionery,11,C
+723,Outlet 0723,Grocery,11,B
+724,Outlet 0724,Grocery,11,B
+725,Outlet 0725,Supermarket,11,B
+726,Outlet 0726,Confectionery,11,A
+727,Outlet 0727,Grocery,11,A
+728,Outlet 0728,Grocery,11,C
+729,Outlet 0729,Confectionery,11,C
+730,Outlet 0730,Grocery,11,C
+731,Outlet 0731,Grocery,11,A
+732,Outlet 0732,Grocery,11,C
+733,Outlet 0733,Confectionery,12,B
+734,Outlet 0734,Grocery,12,C
+735,Outlet 0735,Grocery,12,C
+736,Outlet 0736,Grocery,12,B
+737,Outlet 0737,Grocery,12,B
+738,Outlet 0738,Grocery,12,A
+739,Outlet 0739,Tea stall,12,B
+740,Outlet 0740,Grocery,12,B
+741,Outlet 0741,Confectionery,12,A
+742,Outlet 0742,Supermarket,12,A
+743,Outlet 0743,Tea stall,12,C
+744,Outlet 0744,Pharmacy,12,B
+745,Outlet 0745,Grocery,12,A
+746,Outlet 0746,Supermarket,12,B
+747,Outlet 0747,Pharmacy,12,C
+748,Outlet 0748,Grocery,12,B
+749,Outlet 0749,Grocery,12,C
+750,Outlet 0750,Supermarket,12,B
+751,Outlet 0751,Grocery,12,B
+752,Outlet 0752,Grocery,12,C
+753,Outlet 0753,Grocery,12,B
+754,Outlet 0754,Confectionery,12,A
+755,Outlet 0755,Grocery,12,A
+756,Outlet 0756,Grocery,12,C
+757,Outlet 0757,Grocery,12,C
+758,Outlet 0758,Pharmacy,12,C
+759,Outlet 0759,Confectionery,12,C
+760,Outlet 0760,Confectionery,12,C
+761,Outlet 0761,Confectionery,12,B
+762,Outlet 0762,Confectionery,12,C
+763,Outlet 0763,Grocery,12,C
+764,Outlet 0764,Pharmacy,12,B
+765,Outlet 0765,Grocery,12,B
+766,Outlet 0766,Grocery,12,B
+767,Outlet 0767,Confectionery,12,C
+768,Outlet 0768,Confectionery,12,B
+769,Outlet 0769,Supermarket,12,B
+770,Outlet 0770,Grocery,12,B
+771,Outlet 0771,Grocery,12,C
+772,Outlet 0772,Grocery,12,A
+773,Outlet 0773,Grocery,12,C
+774,Outlet 0774,Grocery,12,C
+775,Outlet 0775,Supermarket,12,C
+776,Outlet 0776,Grocery,12,B
+777,Outlet 0777,Grocery,12,B
+778,Outlet 0778,Supermarket,12,C
+779,Outlet 0779,Grocery,12,C
+780,Outlet 0780,Grocery,12,B
+781,Outlet 0781,Tea stall,12,B
+782,Outlet 0782,Pharmacy,12,C
+783,Outlet 0783,Grocery,12,B
+784,Outlet 0784,Pharmacy,12,C
+785,Outlet 0785,Pharmacy,12,A
+786,Outlet 0786,Confectionery,12,B
+787,Outlet 0787,Confectionery,12,C
+788,Outlet 0788,Grocery,12,C
+789,Outlet 0789,Pharmacy,12,A
+790,Outlet 0790,Grocery,12,C
+791,Outlet 0791,Confectionery,12,C
+792,Outlet 0792,Grocery,12,C
+793,Outlet 0793,Confectionery,12,C
+794,Outlet 0794,Grocery,12,C
+795,Outlet 0795,Supermarket,12,C
+796,Outlet 0796,Grocery,12,C
+797,Outlet 0797,Grocery,12,C
+798,Outlet 0798,Supermarket,12,C
+799,Outlet 0799,Confectionery,12,C
+800,Outlet 0800,Grocery,13,C
+801,Outlet 0801,Grocery,13,C
+802,Outlet 0802,Grocery,13,C
+803,Outlet 0803,Grocery,13,A
+804,Outlet 0804,Grocery,13,C
+805,Outlet 0805,Grocery,13,A
+806,Outlet 0806,Grocery,13,C
+807,Outlet 0807,Pharmacy,13,B
+808,Outlet 0808,Tea stall,13,B
+809,Outlet 0809,Tea stall,13,C
+810,Outlet 0810,Tea stall,13,C
+811,Outlet 0811,Pharmacy,13,C
+812,Outlet 0812,Grocery,13,C
+813,Outlet 0813,Grocery,13,B
+814,Outlet 0814,Grocery,13,C
+815,Outlet 0815,Tea stall,13,A
+816,Outlet 0816,Pharmacy,13,C
+817,Outlet 0817,Supermarket,13,C
+818,Outlet 0818,Supermarket,13,A
+819,Outlet 0819,Grocery,13,C
+820,Outlet 0820,Tea stall,13,C
+821,Outlet 0821,Grocery,13,B
+822,Outlet 0822,Grocery,13,A
+823,Outlet 0823,Grocery,13,C
+824,Outlet 0824,Pharmacy,13,C
+825,Outlet 0825,Pharmacy,13,A
+826,Outlet 0826,Pharmacy,13,B
+827,Outlet 0827,Pharmacy,13,B
+828,Outlet 0828,Tea stall,13,C
+829,Outlet 0829,Tea stall,13,C
+830,Outlet 0830,Grocery,13,C
+831,Outlet 0831,Grocery,13,C
+832,Outlet 0832,Confectionery,13,C
+833,Outlet 0833,Grocery,13,A
+834,Outlet 0834,Pharmacy,13,B
+835,Outlet 0835,Grocery,13,C
+836,Outlet 0836,Grocery,13,C
+837,Outlet 0837,Grocery,13,B
+838,Outlet 0838,Tea stall,13,C
+839,Outlet 0839,Supermarket,13,B
+840,Outlet 0840,Grocery,13,B
+841,Outlet 0841,Tea stall,13,B
+842,Outlet 0842,Tea stall,13,C
+843,Outlet 0843,Pharmacy,13,C
+844,Outlet 0844,Pharmacy,13,C
+845,Outlet 0845,Tea stall,13,A
+846,Outlet 0846,Confectionery,13,C
+847,Outlet 0847,Confectionery,13,C
+848,Outlet 0848,Grocery,14,A
+849,Outlet 0849,Grocery,14,C
+850,Outlet 0850,Grocery,14,B
+851,Outlet 0851,Pharmacy,14,C
+852,Outlet 0852,Grocery,14,C
+853,Outlet 0853,Supermarket,14,C
+854,Outlet 0854,Grocery,14,C
+855,Outlet 0855,Grocery,14,C
+856,Outlet 0856,Tea stall,14,C
+857,Outlet 0857,Pharmacy,14,C
+858,Outlet 0858,Grocery,14,C
+859,Outlet 0859,Grocery,14,C
+860,Outlet 0860,Grocery,14,A
+861,Outlet 0861,Pharmacy,14,C
+862,Outlet 0862,Pharmacy,14,C
+863,Outlet 0863,Pharmacy,14,B
+864,Outlet 0864,Confectionery,14,C
+865,Outlet 0865,Tea stall,14,B
+866,Outlet 0866,Grocery,14,B
+867,Outlet 0867,Grocery,14,A
+868,Outlet 0868,Grocery,14,C
+869,Outlet 0869,Tea stall,14,C
+870,Outlet 0870,Tea stall,14,C
+871,Outlet 0871,Grocery,14,C
+872,Outlet 0872,Tea stall,14,B
+873,Outlet 0873,Pharmacy,14,C
+874,Outlet 0874,Grocery,14,B
+875,Outlet 0875,Supermarket,14,B
+876,Outlet 0876,Pharmacy,14,C
+877,Outlet 0877,Pharmacy,14,C
+878,Outlet 0878,Supermarket,14,B
+879,Outlet 0879,Pharmacy,14,C
+880,Outlet 0880,Pharmacy,14,A
+881,Outlet 0881,Tea stall,14,C
+882,Outlet 0882,Grocery,14,C
+883,Outlet 0883,Tea stall,15,C
+884,Outlet 0884,Tea stall,15,B
+885,Outlet 0885,Supermarket,15,B
+886,Outlet 0886,Confectionery,15,C
+887,Outlet 0887,Pharmacy,15,C
+888,Outlet 0888,Grocery,15,A
+889,Outlet 0889,Pharmacy,15,C
+890,Outlet 0890,Grocery,15,C
+891,Outlet 0891,Grocery,15,B
+892,Outlet 0892,Grocery,15,B
+893,Outlet 0893,Grocery,15,C
+894,Outlet 0894,Grocery,15,B
+895,Outlet 0895,Grocery,15,B
+896,Outlet 0896,Confectionery,15,C
+897,Outlet 0897,Grocery,15,B
+898,Outlet 0898,Confectionery,15,C
+899,Outlet 0899,Supermarket,15,B
+900,Outlet 0900,Tea stall,15,B
+901,Outlet 0901,Tea stall,15,C
+902,Outlet 0902,Grocery,15,C
+903,Outlet 0903,Grocery,15,C
+904,Outlet 0904,Tea stall,15,B
+905,Outlet 0905,Grocery,15,B
+906,Outlet 0906,Supermarket,15,C
+907,Outlet 0907,Grocery,15,C
+908,Outlet 0908,Grocery,15,A
+909,Outlet 0909,Grocery,15,C
+910,Outlet 0910,Grocery,15,A
+911,Outlet 0911,Grocery,15,C
+912,Outlet 0912,Grocery,15,A
+913,Outlet 0913,Tea stall,15,B
+914,Outlet 0914,Grocery,15,C
+915,Outlet 0915,Grocery,15,B
+916,Outlet 0916,Confectionery,15,C
+917,Outlet 0917,Grocery,15,B
+918,Outlet 0918,Pharmacy,15,A
+919,Outlet 0919,Confectionery,15,C
+920,Outlet 0920,Grocery,15,C
+921,Outlet 0921,Supermarket,15,B
+922,Outlet 0922,Grocery,15,C
+923,Outlet 0923,Grocery,15,C
+924,Outlet 0924,Supermarket,15,C
+925,Outlet 0925,Confectionery,15,C
+926,Outlet 0926,Grocery,15,C
+927,Outlet 0927,Pharmacy,15,B
+928,Outlet 0928,Tea stall,15,C
+929,Outlet 0929,Grocery,15,B
+930,Outlet 0930,Grocery,15,C
+931,Outlet 0931,Grocery,15,C
+932,Outlet 0932,Grocery,15,B
+933,Outlet 0933,Supermarket,16,C
+934,Outlet 0934,Grocery,16,C
+935,Outlet 0935,Confectionery,16,B
+936,Outlet 0936,Tea stall,16,B
+937,Outlet 0937,Grocery,16,C
+938,Outlet 0938,Supermarket,16,B
+939,Outlet 0939,Grocery,16,B
+940,Outlet 0940,Confectionery,16,C
+941,Outlet 0941,Tea stall,16,C
+942,Outlet 0942,Confectionery,16,A
+943,Outlet 0943,Supermarket,16,C
+944,Outlet 0944,Confectionery,16,B
+945,Outlet 0945,Grocery,16,C
+946,Outlet 0946,Grocery,16,C
+947,Outlet 0947,Tea stall,16,C
+948,Outlet 0948,Grocery,16,C
+949,Outlet 0949,Grocery,16,C
+950,Outlet 0950,Grocery,16,B
+951,Outlet 0951,Tea stall,16,C
+952,Outlet 0952,Grocery,16,C
+953,Outlet 0953,Grocery,16,C
+954,Outlet 0954,Confectionery,16,A
+955,Outlet 0955,Grocery,16,B
+956,Outlet 0956,Tea stall,16,C
+957,Outlet 0957,Grocery,16,A
+958,Outlet 0958,Pharmacy,16,C
+959,Outlet 0959,Grocery,16,B
+960,Outlet 0960,Tea stall,16,B
+961,Outlet 0961,Grocery,16,B
+962,Outlet 0962,Grocery,16,C
+963,Outlet 0963,Grocery,16,C
+964,Outlet 0964,Tea stall,16,C
+965,Outlet 0965,Supermarket,16,C
+966,Outlet 0966,Grocery,16,C
+967,Outlet 0967,Grocery,16,B
+968,Outlet 0968,Grocery,16,C
+969,Outlet 0969,Supermarket,16,C
+970,Outlet 0970,Pharmacy,16,B
+971,Outlet 0971,Grocery,16,C
+972,Outlet 0972,Pharmacy,16,C
+973,Outlet 0973,Confectionery,16,B
+974,Outlet 0974,Grocery,16,A
+975,Outlet 0975,Grocery,16,B
+976,Outlet 0976,Pharmacy,16,A
+977,Outlet 0977,Confectionery,16,C
+978,Outlet 0978,Grocery,16,C
+979,Outlet 0979,Grocery,16,C
+980,Outlet 0980,Supermarket,16,A
+981,Outlet 0981,Tea stall,16,C
+982,Outlet 0982,Grocery,17,C
+983,Outlet 0983,Grocery,17,A
+984,Outlet 0984,Supermarket,17,B
+985,Outlet 0985,Grocery,17,C
+986,Outlet 0986,Confectionery,17,C
+987,Outlet 0987,Confectionery,17,C
+988,Outlet 0988,Supermarket,17,C
+989,Outlet 0989,Grocery,17,C
+990,Outlet 0990,Grocery,17,B
+991,Outlet 0991,Grocery,17,C
+992,Outlet 0992,Grocery,17,B
+993,Outlet 0993,Grocery,17,C
+994,Outlet 0994,Grocery,17,C
+995,Outlet 0995,Grocery,17,C
+996,Outlet 0996,Grocery,17,A
+997,Outlet 0997,Grocery,17,C
+998,Outlet 0998,Grocery,17,B
+999,Outlet 0999,Grocery,17,B
+1000,Outlet 1000,Grocery,17,B
+1001,Outlet 1001,Grocery,17,C
+1002,Outlet 1002,Confectionery,17,A
+1003,Outlet 1003,Grocery,17,A
+1004,Outlet 1004,Tea stall,17,B
+1005,Outlet 1005,Grocery,17,B
+1006,Outlet 1006,Grocery,17,A
+1007,Outlet 1007,Grocery,17,C
+1008,Outlet 1008,Grocery,17,C
+1009,Outlet 1009,Grocery,17,C
+1010,Outlet 1010,Pharmacy,17,B
+1011,Outlet 1011,Confectionery,17,B
+1012,Outlet 1012,Grocery,17,C
+1013,Outlet 1013,Grocery,17,A
+1014,Outlet 1014,Grocery,17,B
+1015,Outlet 1015,Grocery,17,C
+1016,Outlet 1016,Grocery,17,C
+1017,Outlet 1017,Confectionery,17,C
+1018,Outlet 1018,Confectionery,17,C
+1019,Outlet 1019,Grocery,17,C
+1020,Outlet 1020,Grocery,17,A
+1021,Outlet 1021,Grocery,17,B
+1022,Outlet 1022,Supermarket,17,B
+1023,Outlet 1023,Grocery,17,C
+1024,Outlet 1024,Supermarket,17,C
+1025,Outlet 1025,Confectionery,17,A
+1026,Outlet 1026,Grocery,17,C
+1027,Outlet 1027,Grocery,17,C
+1028,Outlet 1028,Grocery,17,A
+1029,Outlet 1029,Tea stall,17,C
+1030,Outlet 1030,Grocery,17,A
+1031,Outlet 1031,Tea stall,17,C
+1032,Outlet 1032,Grocery,17,B
+1033,Outlet 1033,Grocery,17,C
+1034,Outlet 1034,Tea stall,18,B
+1035,Outlet 1035,Grocery,18,C
+1036,Outlet 1036,Grocery,18,C
+1037,Outlet 1037,Grocery,18,C
+1038,Outlet 1038,Grocery,18,B
+1039,Outlet 1039,Grocery,18,B
+1040,Outlet 1040,Supermarket,18,C
+1041,Outlet 1041,Confectionery,18,B
+1042,Outlet 1042,Grocery,18,A
+1043,Outlet 1043,Supermarket,18,B
+1044,Outlet 1044,Grocery,18,B
+1045,Outlet 1045,Grocery,18,C
+1046,Outlet 1046,Grocery,18,C
+1047,Outlet 1047,Grocery,18,C
+1048,Outlet 1048,Grocery,18,B
+1049,Outlet 1049,Grocery,18,B
+1050,Outlet 1050,Confectionery,18,C
+1051,Outlet 1051,Grocery,18,A
+1052,Outlet 1052,Grocery,18,C
+1053,Outlet 1053,Tea stall,18,C
+1054,Outlet 1054,Pharmacy,18,C
+1055,Outlet 1055,Grocery,18,C
+1056,Outlet 1056,Grocery,18,B
+1057,Outlet 1057,Grocery,18,B
+1058,Outlet 1058,Grocery,18,B
+1059,Outlet 1059,Grocery,18,A
+1060,Outlet 1060,Confectionery,18,C
+1061,Outlet 1061,Pharmacy,18,B
+1062,Outlet 1062,Grocery,18,B
+1063,Outlet 1063,Grocery,18,C
+1064,Outlet 1064,Grocery,18,B
+1065,Outlet 1065,Supermarket,18,A
+1066,Outlet 1066,Grocery,18,C
+1067,Outlet 1067,Pharmacy,18,C
+1068,Outlet 1068,Pharmacy,18,B
+1069,Outlet 1069,Grocery,18,B
+1070,Outlet 1070,Grocery,18,C
+1071,Outlet 1071,Tea stall,18,A
+1072,Outlet 1072,Pharmacy,18,C
+1073,Outlet 1073,Grocery,18,A
+1074,Outlet 1074,Tea stall,18,C
+1075,Outlet 1075,Confectionery,18,B
+1076,Outlet 1076,Grocery,19,B
+1077,Outlet 1077,Grocery,19,B
+1078,Outlet 1078,Supermarket,19,C
+1079,Outlet 1079,Grocery,19,B
+1080,Outlet 1080,Grocery,19,A
+1081,Outlet 1081,Grocery,19,C
+1082,Outlet 1082,Grocery,19,B
+1083,Outlet 1083,Confectionery,19,C
+1084,Outlet 1084,Tea stall,19,C
+1085,Outlet 1085,Grocery,19,A
+1086,Outlet 1086,Tea stall,19,C
+1087,Outlet 1087,Tea stall,19,C
+1088,Outlet 1088,Grocery,19,A
+1089,Outlet 1089,Grocery,19,A
+1090,Outlet 1090,Tea stall,19,C
+1091,Outlet 1091,Pharmacy,19,C
+1092,Outlet 1092,Tea stall,19,C
+1093,Outlet 1093,Grocery,19,C
+1094,Outlet 1094,Grocery,19,A
+1095,Outlet 1095,Grocery,19,B
+1096,Outlet 1096,Grocery,19,A
+1097,Outlet 1097,Grocery,19,C
+1098,Outlet 1098,Confectionery,19,A
+1099,Outlet 1099,Tea stall,19,B
+1100,Outlet 1100,Pharmacy,19,C
+1101,Outlet 1101,Tea stall,19,C
+1102,Outlet 1102,Grocery,19,B
+1103,Outlet 1103,Grocery,19,C
+1104,Outlet 1104,Tea stall,19,C
+1105,Outlet 1105,Grocery,19,A
+1106,Outlet 1106,Supermarket,19,C
+1107,Outlet 1107,Tea stall,19,C
+1108,Outlet 1108,Tea stall,19,A
+1109,Outlet 1109,Grocery,19,C
+1110,Outlet 1110,Tea stall,19,C
+1111,Outlet 1111,Confectionery,19,B
+1112,Outlet 1112,Grocery,19,C
+1113,Outlet 1113,Grocery,19,B
+1114,Outlet 1114,Pharmacy,19,B
+1115,Outlet 1115,Grocery,19,C
+1116,Outlet 1116,Grocery,19,C
+1117,Outlet 1117,Grocery,19,A
+1118,Outlet 1118,Grocery,19,C
+1119,Outlet 1119,Tea stall,19,B
+1120,Outlet 1120,Grocery,19,B
+1121,Outlet 1121,Supermarket,19,A
+1122,Outlet 1122,Grocery,19,C
+1123,Outlet 1123,Grocery,19,C
+1124,Outlet 1124,Grocery,19,A
+1125,Outlet 1125,Grocery,19,C
+1126,Outlet 1126,Confectionery,19,C
+1127,Outlet 1127,Tea stall,19,C
+1128,Outlet 1128,Tea stall,19,C
+1129,Outlet 1129,Grocery,20,C
+1130,Outlet 1130,Grocery,20,C
+1131,Outlet 1131,Grocery,20,B
+1132,Outlet 1132,Confectionery,20,B
+1133,Outlet 1133,Grocery,20,B
+1134,Outlet 1134,Pharmacy,20,C
+1135,Outlet 1135,Grocery,20,B
+1136,Outlet 1136,Grocery,20,A
+1137,Outlet 1137,Grocery,20,C
+1138,Outlet 1138,Grocery,20,C
+1139,Outlet 1139,Pharmacy,20,B
+1140,Outlet 1140,Confectionery,20,B
+1141,Outlet 1141,Grocery,20,C
+1142,Outlet 1142,Supermarket,20,C
+1143,Outlet 1143,Grocery,20,B
+1144,Outlet 1144,Grocery,20,C
+1145,Outlet 1145,Grocery,20,C
+1146,Outlet 1146,Pharmacy,20,C
+1147,Outlet 1147,Grocery,20,C
+1148,Outlet 1148,Supermarket,20,B
+1149,Outlet 1149,Grocery,20,C
+1150,Outlet 1150,Grocery,20,B
+1151,Outlet 1151,Pharmacy,20,A
+1152,Outlet 1152,Grocery,20,C
+1153,Outlet 1153,Confectionery,20,A
+1154,Outlet 1154,Confectionery,20,C
+1155,Outlet 1155,Pharmacy,20,B
+1156,Outlet 1156,Confectionery,20,A
+1157,Outlet 1157,Supermarket,20,C
+1158,Outlet 1158,Grocery,20,C
+1159,Outlet 1159,Grocery,20,B
+1160,Outlet 1160,Confectionery,20,C
+1161,Outlet 1161,Grocery,20,B
+1162,Outlet 1162,Grocery,20,B
+1163,Outlet 1163,Grocery,20,B
+1164,Outlet 1164,Tea stall,20,A

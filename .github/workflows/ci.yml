@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Data is reproducible from the generator
+        run: |
+          python scripts/generate_data.py
+          git diff --exit-code data/
+      - name: Model integrity, KPI reconciliation and sales-app rules
+        run: pytest -v
+      - name: Sales-app quality report
+        run: python -m salesapp.checks

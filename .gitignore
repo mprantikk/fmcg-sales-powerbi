@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+reports/
+# keep the .pbix out of diffs noise but allow committing it

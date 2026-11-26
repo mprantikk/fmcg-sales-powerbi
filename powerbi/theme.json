@@ -1,0 +1,25 @@
+{
+  "name": "FMCG Sales (Masud Parvej)",
+  "dataColors": ["#257de0", "#f47230", "#00b894", "#f2a600", "#ee7fac", "#008a17", "#6a4ce2", "#ec4647"],
+  "background": "#FFFFFF",
+  "foreground": "#191919",
+  "tableAccent": "#257de0",
+  "good": "#0aac23",
+  "neutral": "#f2a600",
+  "bad": "#dc3c3d",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "fontSize": 13, "color": "#191919" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#666666" },
+    "callout": { "fontFace": "Segoe UI Bold", "fontSize": 26, "color": "#191919" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 0 }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#E6E6E6" } }, "radius": 10 }],
+        "dropShadow": [{ "show": false }]
+      }
+    },
+    "page": { "*": { "background": [{ "color": { "solid": { "color": "#F5F6F8" } }, "transparency": 0 }] } }
+  }
+}
