@@ -10,7 +10,7 @@ It is based on the kind of work I did as a BI Executive in FMCG: territory and d
 
 ![Net sales vs target](docs/preview_sales_vs_target.png)
 
-> The charts above are Python previews of the report views. Power BI report screenshots: *coming soon* (`docs/page-*.png`).
+> Charts above are Python renderings of the report views from the same data. The Power BI side of this repo is the semantic model: open `powerbi/pbip/FMCG Sales.pbip` to get every table, relationship and DAX measure ready for report building.
 
 ## What's in the model
 
