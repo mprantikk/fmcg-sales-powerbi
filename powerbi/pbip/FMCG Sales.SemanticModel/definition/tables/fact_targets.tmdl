@@ -1,0 +1,51 @@
+table fact_targets
+	lineageTag: c4ee7e02-8dbd-5074-abf2-a12d11efedf9
+
+	column rep_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: cab93a8b-e2fc-5826-899f-067df6b01d7c
+		summarizeBy: none
+		sourceColumn: rep_id
+
+	column territory_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 37a1008d-b127-5145-97b7-1bddc7c648cc
+		summarizeBy: none
+		sourceColumn: territory_id
+
+	column year_month
+		dataType: string
+		isHidden
+		lineageTag: 94235e9e-f0c9-5099-8528-2c25011862b7
+		summarizeBy: none
+		sourceColumn: year_month
+
+	column date_key
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: a4e39f03-fcf2-5b4e-8015-6877954be935
+		summarizeBy: none
+		sourceColumn: date_key
+
+	column target_bdt
+		dataType: decimal
+		formatString: #,0
+		isHidden
+		lineageTag: 7cdc98eb-c7be-5ca9-b446-ba582eaf7a8d
+		summarizeBy: none
+		sourceColumn: target_bdt
+
+	partition fact_targets = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "fact_targets.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"rep_id", Int64.Type}, {"territory_id", Int64.Type}, {"year_month", type text}, {"date_key", Int64.Type}, {"target_bdt", Currency.Type}}, "en-US")
+				in
+				    Typed

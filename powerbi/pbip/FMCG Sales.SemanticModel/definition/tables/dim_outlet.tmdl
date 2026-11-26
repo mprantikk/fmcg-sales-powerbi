@@ -1,0 +1,46 @@
+table dim_outlet
+	lineageTag: ae6a5216-ffc5-5b6a-85ff-db78f36bcd3f
+
+	column outlet_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 41839528-9bdf-54d4-98ee-5cf265a02a4e
+		summarizeBy: none
+		sourceColumn: outlet_id
+
+	column outlet_name
+		dataType: string
+		lineageTag: 84f285d4-5f44-560d-86ef-bf423ea30664
+		summarizeBy: none
+		sourceColumn: outlet_name
+
+	column outlet_type
+		dataType: string
+		lineageTag: 2a77dca9-90c9-54a1-b93c-c6421d034aab
+		summarizeBy: none
+		sourceColumn: outlet_type
+
+	column territory_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 316b1bc9-d4f6-58a7-88b4-657b4b11685b
+		summarizeBy: none
+		sourceColumn: territory_id
+
+	column grade
+		dataType: string
+		lineageTag: fdc4bd13-1e33-5668-b43b-8eff971be614
+		summarizeBy: none
+		sourceColumn: grade
+
+	partition dim_outlet = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "dim_outlet.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"outlet_id", Int64.Type}, {"outlet_name", type text}, {"outlet_type", type text}, {"territory_id", Int64.Type}, {"grade", type text}}, "en-US")
+				in
+				    Typed

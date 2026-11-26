@@ -1,0 +1,59 @@
+table dim_territory
+	lineageTag: 0cc33268-f898-5224-b5db-3def8a6d08a3
+
+	column territory_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: de25d5ae-cfa7-5c9d-8326-963fbe389219
+		summarizeBy: none
+		sourceColumn: territory_id
+
+	column territory
+		dataType: string
+		lineageTag: 73c1714a-eaaf-5ae1-9d41-00fc26162a79
+		summarizeBy: none
+		sourceColumn: territory
+
+	column region
+		dataType: string
+		lineageTag: 88d405ba-985d-53e7-ad40-5bb1a6f03d2a
+		summarizeBy: none
+		sourceColumn: region
+
+	column division
+		dataType: string
+		lineageTag: e8a3821b-f45e-56be-b532-a39f4524d63f
+		summarizeBy: none
+		sourceColumn: division
+
+	column area_type
+		dataType: string
+		lineageTag: a9c9ea78-d2d9-5303-81a9-c2fec1ac10d1
+		summarizeBy: none
+		sourceColumn: area_type
+
+	hierarchy Geography
+		lineageTag: 346afb8f-0481-5bc9-b335-8c8390dd94a4
+
+		level Division
+			lineageTag: ba3120d7-75a8-53a4-8969-b5fdad9ce964
+			column: division
+
+		level Region
+			lineageTag: 50f04fa2-9a31-5e1e-bab1-c86c3cd580ff
+			column: region
+
+		level Territory
+			lineageTag: f9d26d2b-6aa6-587f-af6a-68cff1b71262
+			column: territory
+
+	partition dim_territory = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "dim_territory.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"territory_id", Int64.Type}, {"territory", type text}, {"region", type text}, {"division", type text}, {"area_type", type text}}, "en-US")
+				in
+				    Typed

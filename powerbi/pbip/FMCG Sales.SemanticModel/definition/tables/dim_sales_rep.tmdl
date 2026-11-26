@@ -1,0 +1,41 @@
+table dim_sales_rep
+	lineageTag: cbbacccd-247c-5c5b-826a-d691fb30bc71
+
+	column rep_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: a2ac622e-3e5a-570c-ba83-164dbf29e283
+		summarizeBy: none
+		sourceColumn: rep_id
+
+	column rep_name
+		dataType: string
+		lineageTag: 47b323ec-942d-5631-a193-75c0293de949
+		summarizeBy: none
+		sourceColumn: rep_name
+
+	column territory_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: ed74dd67-a2ca-5082-a948-24acbfe90ee7
+		summarizeBy: none
+		sourceColumn: territory_id
+
+	column joined_year
+		dataType: int64
+		formatString: 0
+		lineageTag: 89acabc5-5193-5f9c-88b2-d0d2dbb9dea6
+		summarizeBy: none
+		sourceColumn: joined_year
+
+	partition dim_sales_rep = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "dim_sales_rep.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"rep_id", Int64.Type}, {"rep_name", type text}, {"territory_id", Int64.Type}, {"joined_year", Int64.Type}}, "en-US")
+				in
+				    Typed

@@ -1,0 +1,68 @@
+table fact_visits
+	lineageTag: 4e6fe18f-9027-5ebe-bacd-0c2357de9872
+
+	column visit_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 81ab46c2-d380-5cfd-9ba1-815758db44d5
+		summarizeBy: none
+		sourceColumn: visit_id
+
+	column date_key
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 3c4f30c9-768d-5db1-86b8-2afe18bec2df
+		summarizeBy: none
+		sourceColumn: date_key
+
+	column outlet_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 42fa2e8f-99ac-5166-ac00-b9791a4e8576
+		summarizeBy: none
+		sourceColumn: outlet_id
+
+	column rep_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 9e6f2582-23d7-5979-ab17-6118d2618e8f
+		summarizeBy: none
+		sourceColumn: rep_id
+
+	column visited
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: e46938b9-c7b2-5865-a5ba-8027cf11069a
+		summarizeBy: none
+		sourceColumn: visited
+
+	column productive
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 5af77f0b-8e55-5a5c-8759-0e61624e6957
+		summarizeBy: none
+		sourceColumn: productive
+
+	column gps_verified
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: f0b6bdce-fd40-5802-b222-31a162c8b769
+		summarizeBy: none
+		sourceColumn: gps_verified
+
+	partition fact_visits = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "fact_visits.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"visit_id", Int64.Type}, {"date_key", Int64.Type}, {"outlet_id", Int64.Type}, {"rep_id", Int64.Type}, {"visited", Int64.Type}, {"productive", Int64.Type}, {"gps_verified", Int64.Type}}, "en-US")
+				in
+				    Typed

@@ -1,0 +1,63 @@
+{
+  "config": "{\"version\": \"5.43\", \"activeSectionIndex\": 0}",
+  "layoutOptimization": 0,
+  "resourcePackages": [],
+  "sections": [
+    {
+      "name": "3b8e2e68acf257d294e5",
+      "displayName": "Executive overview",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "ordinal": 0,
+      "visualContainers": [],
+      "config": "{}",
+      "filters": "[]"
+    },
+    {
+      "name": "f5b58eb98703511c9800",
+      "displayName": "Territory performance",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "ordinal": 1,
+      "visualContainers": [],
+      "config": "{}",
+      "filters": "[]"
+    },
+    {
+      "name": "35808ff4e959562db14a",
+      "displayName": "Field force",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "ordinal": 2,
+      "visualContainers": [],
+      "config": "{}",
+      "filters": "[]"
+    },
+    {
+      "name": "190d23d1365a5665a263",
+      "displayName": "Product & distribution",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "ordinal": 3,
+      "visualContainers": [],
+      "config": "{}",
+      "filters": "[]"
+    },
+    {
+      "name": "7888ccf395b659d98804",
+      "displayName": "Data quality",
+      "displayOption": 1,
+      "width": 1280,
+      "height": 720,
+      "ordinal": 4,
+      "visualContainers": [],
+      "config": "{}",
+      "filters": "[]"
+    }
+  ],
+  "filters": "[]"
+}

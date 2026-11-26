@@ -1,0 +1,308 @@
+table fact_sales
+	lineageTag: e7e4d562-a184-5b6f-8010-db9efe538fa9
+
+	measure 'Gross Sales' =
+			SUM ( fact_sales[gross_bdt] )
+		formatString: #,0
+		displayFolder: 1 Sales
+		lineageTag: 371343e4-a657-5ded-bcb7-60cde5ff32e4
+
+	measure Discounts =
+			SUM ( fact_sales[discount_bdt] )
+		formatString: #,0
+		displayFolder: 1 Sales
+		lineageTag: cb7fb1a4-1e59-536e-810e-359b2fca8788
+
+	measure Returns =
+			SUM ( fact_sales[returned_bdt] )
+		formatString: #,0
+		displayFolder: 1 Sales
+		lineageTag: d40cb90b-9d51-5e5d-96fd-07891945d884
+
+	measure 'Net Sales' =
+			SUM ( fact_sales[net_bdt] ) - [Returns]
+		formatString: #,0
+		displayFolder: 1 Sales
+		lineageTag: 75169291-0187-5739-89fa-2f17574aa726
+
+	measure 'Net Sales LY' =
+			CALCULATE ( [Net Sales], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+		formatString: #,0
+		displayFolder: 1 Sales
+		lineageTag: 2ec8964f-dd0c-591e-ae18-ad06f9170ccc
+
+	measure 'Net Sales YoY %' =
+			DIVIDE ( [Net Sales] - [Net Sales LY], [Net Sales LY] )
+		formatString: 0.0%
+		displayFolder: 1 Sales
+		lineageTag: 6a3aa87f-9db1-58e1-b3af-c015ffe6efe9
+
+	measure 'Net Sales MTD' =
+			TOTALMTD ( [Net Sales], dim_date[date] )
+		formatString: #,0
+		displayFolder: 1 Sales
+		lineageTag: 17b15700-92d4-5343-a1d4-56c1f512cb30
+
+	measure 'Net Sales YTD' =
+			TOTALYTD ( [Net Sales], dim_date[date] )
+		formatString: #,0
+		displayFolder: 1 Sales
+		lineageTag: ae55bca7-fb9c-5eed-9dd3-03ecba9737a6
+
+	measure 'Net Sales YTD LY' =
+			CALCULATE ( [Net Sales YTD], SAMEPERIODLASTYEAR ( dim_date[date] ) )
+		formatString: #,0
+		displayFolder: 1 Sales
+		lineageTag: d6a012d5-2dc0-585b-827c-cc21760a3bfd
+
+	measure 'Return Rate %' =
+			DIVIDE ( [Returns], SUM ( fact_sales[net_bdt] ) )
+		formatString: 0.0%
+		displayFolder: 1 Sales
+		lineageTag: c0f29ea1-49b2-54a2-972a-ea81e6cbb17d
+
+	measure 'Discount Rate %' =
+			DIVIDE ( [Discounts], [Gross Sales] )
+		formatString: 0.0%
+		displayFolder: 1 Sales
+		lineageTag: 4fe8cd5d-a8ac-5500-964a-101541ca43b9
+
+	measure Units =
+			SUM ( fact_sales[qty] )
+		formatString: #,0
+		displayFolder: 1 Sales
+		lineageTag: d8c1e698-db3e-587e-9631-8de4103ffdf6
+
+	measure Target =
+			SUM ( fact_targets[target_bdt] )
+		formatString: #,0
+		displayFolder: 2 Targets
+		lineageTag: 095930f8-6c73-5966-8ca0-b97dbc5e69e2
+
+	measure 'Target Achievement %' =
+			DIVIDE ( [Net Sales], [Target] )
+		formatString: 0.0%
+		displayFolder: 2 Targets
+		lineageTag: b4c8a749-a1d7-5ef6-9e43-1c21614afa43
+
+	measure 'Gap to Target' =
+			[Net Sales] - [Target]
+		formatString: #,0
+		displayFolder: 2 Targets
+		lineageTag: 6cb9df00-b363-5127-ab89-60ea24fbcc01
+
+	measure 'Achievement Status' =
+			VAR a = [Target Achievement %]
+			RETURN SWITCH ( TRUE (), ISBLANK ( a ), BLANK (), a >= 1, "On target", a >= 0.9, "Close", "Behind" )
+		displayFolder: 2 Targets
+		lineageTag: a883f665-47c8-58e5-b44f-9eed587ade98
+
+	measure 'Visits Planned' =
+			COUNTROWS ( fact_visits )
+		formatString: #,0
+		displayFolder: 3 Field force
+		lineageTag: bde8982a-3110-563c-836b-dd5c131352e0
+
+	measure 'Visits Completed' =
+			CALCULATE ( COUNTROWS ( fact_visits ), fact_visits[visited] = 1 )
+		formatString: #,0
+		displayFolder: 3 Field force
+		lineageTag: fb327c07-8eab-545c-afc7-3c2927f0a4bf
+
+	measure 'Productive Calls' =
+			CALCULATE ( COUNTROWS ( fact_visits ), fact_visits[productive] = 1 )
+		formatString: #,0
+		displayFolder: 3 Field force
+		lineageTag: 5478788a-45b4-5b3d-b0be-26022dbdf40f
+
+	measure 'Visit Compliance %' =
+			DIVIDE ( [Visits Completed], [Visits Planned] )
+		formatString: 0.0%
+		displayFolder: 3 Field force
+		lineageTag: 2f8cf7b4-3541-502f-869f-23c76819d174
+
+	measure 'Strike Rate %' =
+			DIVIDE ( [Productive Calls], [Visits Completed] )
+		formatString: 0.0%
+		displayFolder: 3 Field force
+		lineageTag: 0dc0d185-0d20-5693-8b77-8fadaf3da5f9
+
+	measure Orders =
+			DISTINCTCOUNT ( fact_sales[visit_id] )
+		formatString: #,0
+		displayFolder: 3 Field force
+		lineageTag: 5c1dc167-cd59-5ef0-8f6c-5643b760dca8
+
+	measure 'Avg Drop Size' =
+			DIVIDE ( SUM ( fact_sales[net_bdt] ), [Orders] )
+		formatString: #,0
+		displayFolder: 3 Field force
+		lineageTag: 5b2c35fb-c5d0-5691-8166-bcb77bb56b45
+
+	measure 'Lines per Call' =
+			DIVIDE ( COUNTROWS ( fact_sales ), [Orders] )
+		formatString: 0.00
+		displayFolder: 3 Field force
+		lineageTag: b7682ccc-755d-5c12-a997-f3adccc5ba68
+
+	measure 'Active Outlets' =
+			DISTINCTCOUNT ( fact_sales[outlet_id] )
+		formatString: #,0
+		displayFolder: 4 Distribution
+		lineageTag: bf84b127-ef22-509c-a697-1468113c10f7
+
+	measure 'Total Outlets' =
+			CALCULATE ( COUNTROWS ( dim_outlet ), REMOVEFILTERS ( fact_sales ) )
+		formatString: #,0
+		displayFolder: 4 Distribution
+		lineageTag: 10186002-7590-5e90-a7dd-b229fd1bd1a5
+
+	measure 'Numeric Distribution %' =
+			DIVIDE ( [Active Outlets], [Total Outlets] )
+		formatString: 0.0%
+		displayFolder: 4 Distribution
+		lineageTag: 9594dac4-6d85-51eb-ab39-82ed4ff33104
+
+	measure 'SKU Share %' =
+			DIVIDE ( [Net Sales], CALCULATE ( [Net Sales], REMOVEFILTERS ( dim_product ) ) )
+		formatString: 0.0%
+		displayFolder: 5 Mix
+		lineageTag: e73bb29e-9530-5cf4-8d39-e6b07f93f46d
+
+	measure 'Territory Rank' =
+			RANKX ( ALLSELECTED ( dim_territory[territory] ), [Net Sales], , DESC, DENSE )
+		formatString: #,0
+		displayFolder: 5 Mix
+		lineageTag: 2152511f-5e89-5e3e-bcce-fe6d577b7b54
+
+	measure 'Outlet Cumulative Share %' =
+			VAR cur = [Net Sales]
+			VAR tbl = ADDCOLUMNS ( ALLSELECTED ( dim_outlet[outlet_id] ), "@s", [Net Sales] )
+			RETURN DIVIDE ( SUMX ( FILTER ( tbl, [@s] >= cur ), [@s] ), SUMX ( tbl, [@s] ) )
+		formatString: 0.0%
+		displayFolder: 5 Mix
+		lineageTag: d88f19a9-68dc-5e5f-af69-17237260a9cc
+
+	measure 'GPS Verified %' =
+			DIVIDE ( CALCULATE ( COUNTROWS ( fact_visits ), fact_visits[visited] = 1, fact_visits[gps_verified] = 1 ),
+			[Visits Completed] )
+		formatString: 0.0%
+		displayFolder: 6 Data quality
+		lineageTag: 191f56c5-05a1-5f39-9678-506b43d165f5
+
+	measure 'Net Sales (M BDT)' =
+			DIVIDE ( [Net Sales], 1e6 )
+		formatString: #,0.00
+		displayFolder: 9 Helpers
+		lineageTag: 9e811416-246d-5080-b189-f02d56396ce7
+
+	measure 'YoY Arrow' =
+			VAR y = [Net Sales YoY %]
+			RETURN IF ( ISBLANK ( y ), BLANK (), IF ( y >= 0, "▲ ", "▼ " ) & FORMAT ( ABS ( y ), "0.0%" ) )
+		displayFolder: 9 Helpers
+		lineageTag: 7d8053c3-d2ff-5b8e-a8ab-29fd62e609e0
+
+	column line_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: a8f7a018-f995-5e4e-9036-0e2ea32746eb
+		summarizeBy: none
+		sourceColumn: line_id
+
+	column date_key
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: d2e577eb-aefe-58af-a946-5c4eab63c947
+		summarizeBy: none
+		sourceColumn: date_key
+
+	column visit_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 8b39d284-d373-5690-8039-64192b8191fb
+		summarizeBy: none
+		sourceColumn: visit_id
+
+	column outlet_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 8e5e1d54-7643-5bc2-b260-b8040ad04845
+		summarizeBy: none
+		sourceColumn: outlet_id
+
+	column sku
+		dataType: string
+		isHidden
+		lineageTag: bb17a1f9-4851-5d3f-b37c-b06c15a3de9a
+		summarizeBy: none
+		sourceColumn: sku
+
+	column rep_id
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: 040f98c4-38db-5231-b824-9b85ab84722d
+		summarizeBy: none
+		sourceColumn: rep_id
+
+	column qty
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: ca489ebd-238a-5d97-91eb-9422baff55ff
+		summarizeBy: none
+		sourceColumn: qty
+
+	column gross_bdt
+		dataType: decimal
+		formatString: #,0
+		isHidden
+		lineageTag: 81c4a58f-2155-5664-b95b-fadf4a41a885
+		summarizeBy: none
+		sourceColumn: gross_bdt
+
+	column discount_bdt
+		dataType: decimal
+		formatString: #,0
+		isHidden
+		lineageTag: 83e1fb4f-6c81-5211-a79c-b4359200809b
+		summarizeBy: none
+		sourceColumn: discount_bdt
+
+	column net_bdt
+		dataType: decimal
+		formatString: #,0
+		isHidden
+		lineageTag: 97bc4458-3392-5345-ac0c-b202aea2bff3
+		summarizeBy: none
+		sourceColumn: net_bdt
+
+	column returned_qty
+		dataType: int64
+		formatString: 0
+		isHidden
+		lineageTag: f6d64aa2-1eeb-597f-a158-293f665370a1
+		summarizeBy: none
+		sourceColumn: returned_qty
+
+	column returned_bdt
+		dataType: decimal
+		formatString: #,0
+		isHidden
+		lineageTag: b86a719c-1acf-5722-b306-1cd10f2186d3
+		summarizeBy: none
+		sourceColumn: returned_bdt
+
+	partition fact_sales = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(DataFolder & "fact_sales.csv"), [Delimiter = ",", Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Typed = Table.TransformColumnTypes(Promoted, {{"line_id", Int64.Type}, {"date_key", Int64.Type}, {"visit_id", Int64.Type}, {"outlet_id", Int64.Type}, {"sku", type text}, {"rep_id", Int64.Type}, {"qty", Int64.Type}, {"gross_bdt", Currency.Type}, {"discount_bdt", Currency.Type}, {"net_bdt", Currency.Type}, {"returned_qty", Int64.Type}, {"returned_bdt", Currency.Type}}, "en-US")
+				in
+				    Typed
